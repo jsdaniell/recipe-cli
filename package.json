@@ -1,0 +1,24 @@
+{
+  "name": "recipe-cli",
+  "version": "1.0.1",
+  "description": "Easy cli solution to generate boilerplate projects",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "goBinary": {
+    "name": "recipe-cli",
+    "path": "./bin",
+    "url": "https://github.com/jsdaniell/recipe-cli/releases/download/v{{version}}/recipe-cli_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  },
+  "author": "jsdaniell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsdaniell/recipe-cli/issues"
+  },
+  "homepage": "https://github.com/jsdaniell/recipe-cli#readme",
+  "dependencies": {
+    "go-npm": "^0.1.9"
+  }
+}
