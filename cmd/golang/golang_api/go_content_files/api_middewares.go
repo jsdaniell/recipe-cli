@@ -6,7 +6,7 @@ import (
 )
 
 func CreateMiddlewaresPackage(username, projectName string) {
-	err := os.Mkdir(projectName + "/api/controllers", os.FileMode(0777))
+	err := os.Mkdir(projectName + "/api/middlewares", os.FileMode(0777))
 	if err != nil {
 		log.Fatal(err)
 	}

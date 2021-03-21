@@ -1,6 +1,6 @@
 {
   "name": "recipe-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easy cli solution to generate boilerplate projects",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jsdaniell/recipe-cli#readme",
   "dependencies": {
-    "go-npm": "^0.1.9"
+    "go-npm": "^0.1.9",
+    "recipe-cli": "^1.0.5"
   }
 }

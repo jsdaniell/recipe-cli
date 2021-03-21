@@ -12,8 +12,6 @@ func CreateControllersPackage(username, projectName string) {
 	}
 
 	writeEntityControllerFile(username, projectName)
-
-
 }
 
 func writeEntityControllerFile(username, projectName string){
