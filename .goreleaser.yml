@@ -13,6 +13,10 @@ builds:
       - linux
       - windows
       - darwin
+dockers:
+  - image_templates:
+      - jsdaniell/recipe-cli
+  - dockerfile: Dockerfile
 archives:
   - replacements:
       darwin: Darwin
