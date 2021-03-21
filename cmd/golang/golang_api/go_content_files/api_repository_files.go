@@ -1,7 +1,6 @@
 package go_content_files
 
 import (
-	"github.com/jsdaniell/recipe-cli/cmd/golang"
 	"log"
 	"os"
 )
@@ -136,21 +135,21 @@ func DeleteEntity(name string) error {
 		log.Fatal(err)
 	}
 
-	if projectDatabase == golang.NoSelection {
+	if projectDatabase == "NoSelection" {
 		_, err = file.WriteString(contentNoSelection)
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
 
-	if projectDatabase == golang.FirebaseDatabase {
+	if projectDatabase == "Firebase" {
 		_, err = file.WriteString(contentFirebase)
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
 
-	if projectDatabase ==  golang.MongoDBDatabase {
+	if projectDatabase ==  "MongoDB" {
 		_, err = file.WriteString(contentMongoDB)
 		if err != nil {
 			log.Fatal(err)

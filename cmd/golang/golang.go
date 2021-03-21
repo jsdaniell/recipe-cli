@@ -2,7 +2,6 @@ package golang
 
 import (
 	"errors"
-	"fmt"
 	"github.com/jsdaniell/recipe-cli/cli"
 	"github.com/jsdaniell/recipe-cli/cmd/golang/golang_api"
 	"github.com/spf13/cobra"
@@ -57,11 +56,5 @@ var GoCmd = &cobra.Command{
 		if projectType == API {
 			golang_api.InitRoot(username, projectName, projectDatabase)
 		}
-
-
-
-		fmt.Println(projectType)
-		fmt.Println(projectDatabase)
-		fmt.Println(username)
 	},
 }

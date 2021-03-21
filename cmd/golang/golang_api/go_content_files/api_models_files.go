@@ -1,7 +1,6 @@
 package go_content_files
 
 import (
-	"github.com/jsdaniell/recipe-cli/cmd/golang"
 	"log"
 	"os"
 )
@@ -44,14 +43,14 @@ type Entity struct {
 		log.Fatal(err)
 	}
 
-	if projectDatabase == golang.NoSelection || projectDatabase == golang.FirebaseDatabase {
+	if projectDatabase == "NoSelection" || projectDatabase == "Firebase" {
 		_, err = file.WriteString(contentFirebase)
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
 
-	if projectDatabase ==  golang.MongoDBDatabase {
+	if projectDatabase ==  "MongoDB" {
 		_, err = file.WriteString(contentMongoDB)
 		if err != nil {
 			log.Fatal(err)
@@ -81,14 +80,14 @@ type Token struct {
 		log.Fatal(err)
 	}
 
-	if projectDatabase == golang.NoSelection || projectDatabase == golang.FirebaseDatabase {
+	if projectDatabase == "NoSelection" || projectDatabase == "Firebase" {
 		_, err = file.WriteString(contentFirebase)
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
 
-	if projectDatabase ==  golang.MongoDBDatabase {
+	if projectDatabase ==  "MongoDB" {
 		_, err = file.WriteString(contentMongoDB)
 		if err != nil {
 			log.Fatal(err)

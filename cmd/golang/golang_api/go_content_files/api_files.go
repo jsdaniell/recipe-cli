@@ -6,8 +6,6 @@ import (
 )
 
 func CreateApiPackage(username, projectName string) {
-
-
 	err := os.Mkdir(projectName + "/api", os.FileMode(0777))
 	if err != nil {
 		log.Fatal(err)
