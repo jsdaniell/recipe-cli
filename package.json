@@ -1,6 +1,6 @@
 {
   "name": "recipe-cli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Easy cli solution to generate boilerplate projects",
   "main": "index.js",
   "scripts": {
