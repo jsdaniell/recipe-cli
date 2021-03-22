@@ -19,10 +19,10 @@ func writeMiddlewaresFile(username, projectName string){
 package middlewares
 
 import (
-	\"fmt\"
-	\"github.com/`+ username +`/`+ projectName +`/api/responses\"
-	\"log\"
-	\"net/http\"
+	"fmt"
+	"github.com/`+ username +`/`+ projectName +`/api/responses"
+	"log"
+	"net/http"
 )
 
 // Validate Access Control to API and deal with CORS request.
@@ -32,14 +32,14 @@ func SetMiddlewareLogger(next http.HandlerFunc) http.HandlerFunc {
 
 		// TODO: When in production setup to https://website
 
-		w.Header().Set(\"Access-Control-Allow-Origin\", \"*\")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 
-		w.Header().Set(\"Access-Control-Allow-Headers\", \"Content-Type, Authorization\")
-		w.Header().Set(\"Access-Control-Allow-Methods\", \"*\")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		w.Header().Set("Access-Control-Allow-Methods", "*")
 
-		log.Println(\"%s %s%s %s\", r.Method, r.Host, r.RequestURI, r.Proto)
+		log.Println("%s %s%s %s", r.Method, r.Host, r.RequestURI, r.Proto)
 
-		if (*r).Method == \"OPTIONS\" {
+		if (*r).Method == "OPTIONS" {
 			return
 		}
 
@@ -52,9 +52,9 @@ func SetMiddlewareJSON(next http.HandlerFunc, openRoute bool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
 		if !openRoute {
-			auth := r.Header.Get(\"Authorization\")
-			if auth == \"\" {
-				responses.ERROR(w, http.StatusBadRequest, fmt.Errorf(\"missing authorization token\"))
+			auth := r.Header.Get("Authorization")
+			if auth == "" {
+				responses.ERROR(w, http.StatusBadRequest, fmt.Errorf("missing authorization token"))
 				return
 			}
 		}
