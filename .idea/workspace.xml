@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d377131-0547-41d2-9c25-851b6db2eab1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_controllers_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_controllers_files.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_repository_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_repository_files.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/.github/workflows/deploy.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/controllers/entity.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/db/database.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/middlewares/middlewares.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/models/Entity.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/models/Token.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/repository/entity_repository/entity_repository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/responses/responses.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/router/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/router/routes/entity_routes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/router/routes/routes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/router/routes/server_routes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/utils/json_utility/json_utility.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/api/utils/security/token.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/config/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/deploy_to_heroku.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/heroku.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/AUTHORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/doc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/middleware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/mux.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/regexp.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/route.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/gorilla/mux/test_helpers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/joho/godotenv/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/joho/godotenv/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/joho/godotenv/LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/joho/godotenv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/github.com/joho/godotenv/godotenv.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire/vendor/modules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
