@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d377131-0547-41d2-9c25-851b6db2eab1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_models_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/golang/golang_api/go_content_files/api_models_files.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
