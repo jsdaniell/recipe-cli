@@ -15,7 +15,7 @@ func CreateOtherCommandPackage(username, projectName string) {
 }
 
 func writeOtherCommandFile(username, projectName string){
-	var content = `package golang
+	var content = `package other_commands
 
 import (
 	"errors"

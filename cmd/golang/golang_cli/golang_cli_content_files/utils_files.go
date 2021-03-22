@@ -148,7 +148,7 @@ func ExecuteShellCommand(command string, projectName string, args ...string){
 }
 `
 
-	file, err := os.Create(projectName + "/utils/go_commands/shell_commands.go")
+	file, err := os.Create(projectName + "/utils/shell_commands/shell_commands.go")
 	if err != nil {
 		log.Fatal(err)
 	}

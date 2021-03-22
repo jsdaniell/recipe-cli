@@ -77,6 +77,7 @@ project
 - CI CD Scripts for publish release pre-configured.
 - Deploy and release with `git tag -a v1.0.0 -m "Alpha Release" && git push origin v1.0.0` (the version have to be the same of package.json)
 - NPM deploy script configured, production-ready, publish with `npm publish`.
+- Install GO CLI package with `npm install -g your-package`, update with `npm update -g your-package`.
 
 ```
 project
