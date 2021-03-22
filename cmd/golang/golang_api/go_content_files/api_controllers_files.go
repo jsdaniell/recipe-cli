@@ -12,6 +12,7 @@ func CreateControllersPackage(username, projectName string) {
 	}
 
 	writeEntityControllerFile(username, projectName)
+	writeServerControllerFile(projectName)
 }
 
 func writeEntityControllerFile(username, projectName string){
@@ -55,6 +56,28 @@ func AddEntityController(w http.ResponseWriter, r *http.Request) {
 `
 
 	file, err := os.Create(projectName + "/api/controllers/entity.go")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = file.WriteString(content)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func writeServerControllerFile(projectName string){
+	var content = `package controllers
+
+import "net/http"
+
+// Handle the root / route to return feedback about the server to request like "Server Running..."
+func ServerRunning(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Server Running..."))
+}
+`
+
+	file, err := os.Create(projectName + "/api/controllers/server.go")
 	if err != nil {
 		log.Fatal(err)
 	}

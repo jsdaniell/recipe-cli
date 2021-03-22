@@ -73,11 +73,11 @@ func AddEntity(name string, description string) (*firestore.WriteResult, error) 
 	var contentMongoDB = `package entity_repository
 
 import (
-	\"context\"
-	\"errors\"
-	\"github.com/${username}/${nameProject}/api/db\"
-	\"github.com/${username}/${nameProject}/api/models\"
-	\"go.mongodb.org/mongo-driver/bson\"
+	"context"
+	"errors"
+	"github.com/`+ username +`/`+ projectName +`/api/db"
+	"github.com/`+ username +`/`+ projectName +`/api/models"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 func AddEntity(entity models.Entity) error {
@@ -89,7 +89,7 @@ func AddEntity(entity models.Entity) error {
 		return err
 	}
 
-	filter := bson.M{\"name\": entity.Name}
+	filter := bson.M{"name": entity.Name}
 
 	errs := client.Collection(db.EntitiesCollection).FindOne(context.Background(), filter).Decode(&exists)
 	if errs == nil {
@@ -97,7 +97,7 @@ func AddEntity(entity models.Entity) error {
 	}
 
 	if (exists != models.Entity{}) {
-		return errors.New(\"this entity already exists\")
+		return errors.New("this entity already exists")
 	}
 
 	_, err = client.Collection(db.EntitiesCollection).InsertOne(context.Background(), entity)
@@ -114,11 +114,11 @@ func DeleteEntity(name string) error {
 		return err
 	}
 
-	filter := bson.M{\"name\": \"entityName\"}
+	filter := bson.M{"name": "entityName"}
 
 	errs := client.Collection(db.EntitiesCollection).FindOneAndDelete(context.Background(), filter)
 	if errs.Err() == nil {
-		return errors.New(\"do not exists\")
+		return errors.New("do not exists")
 	}
 
 	return nil
@@ -127,7 +127,14 @@ func DeleteEntity(name string) error {
 
 	var contentNoSelection = `package entity_repository
 
+import (
+	"github.com/`+ username +`/`+ projectName +`/api/models"
+)
+
 // Put your database functions of specific entity here.
+func AddEntity(entity models.Entity) models.Entity {
+return models.Entity{}
+}
 `
 
 	file, err := os.Create(projectName + "/api/repository/entity_repository/entity_repository.go")
