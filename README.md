@@ -75,4 +75,29 @@ project
 - Utility to integrate shell commands inside your application.
 - Pre-configured release configuration and script.
 - CI CD Scripts for publish release pre-configured.
-- NPM deploy script configured, production-ready.
+- Deploy and release with `git tag -a v1.0.0 -m "Alpha Release" && git push origin v1.0.0` (the version have to be the same of package.json)
+- NPM deploy script configured, production-ready, publish with `npm publish`.
+
+```
+project
+├── cli
+│   ├── selector_cli.go (selector cli interface)
+│   └── user_input.go (user input cli interface with validation)
+├── cmd
+│   ├── other_command (example of declaring subcommand)
+│   │   └── other_command.go
+│   └── root.go
+├── go.mod
+├── go.sum
+├── main.go
+├── package.json
+├── utils (go commands utilities and shell commands utilities)
+│   ├── go_commands
+│   │   ├── go_mod.go
+│   │   └── shell_commands.go
+│   └── shell_commands
+└── vendor
+    ...
+
+27 directories, 11 files
+```
