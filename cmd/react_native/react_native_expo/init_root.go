@@ -5,6 +5,5 @@ import (
 )
 
 func InitRoot(projectName string) {
-
 	shell_commands.ExecuteShellCommand("npx expo-cli expo init", projectName)
 }
