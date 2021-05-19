@@ -5,7 +5,6 @@ import (
 	"github.com/jsdaniell/recipe-cli/cli"
 	"github.com/jsdaniell/recipe-cli/cmd/golang/golang_api"
 	"github.com/jsdaniell/recipe-cli/cmd/golang/golang_cli"
-	"github.com/jsdaniell/recipe-cli/cmd/golang/golang_socket_io"
 	"github.com/spf13/cobra"
 	"log"
 )
@@ -13,7 +12,6 @@ import (
 const (
 	API              string = "API"
 	CLI              string = "CLI"
-	SocketIo                = "Socket IO"
 	MongoDBDatabase         = "MongoDB"
 	FirebaseDatabase        = "Firebase"
 	NoSelection             = "NoSelection"
@@ -36,7 +34,7 @@ var GoCmd = &cobra.Command{
 	Short: "Choose the type of project:",
 	Long:  `Different golang projects options for boilerplate.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		projectType, err := cli.SelectorCli("Choose the type of golang project:", API, CLI, SocketIo)
+		projectType, err := cli.SelectorCli("Choose the type of golang project:", API, CLI)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -62,10 +60,6 @@ var GoCmd = &cobra.Command{
 
 		if projectType == CLI {
 			golang_cli.InitRoot(username, projectName)
-		}
-
-		if projectType == SocketIo {
-			golang_socket_io.InitRoot(username, projectName)
 		}
 	},
 }

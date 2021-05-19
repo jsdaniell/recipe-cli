@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"github.com/jsdaniell/recipe-cli/cmd/golang"
+	"github.com/jsdaniell/recipe-cli/cmd/react_native"
 	"github.com/spf13/cobra"
 	"os"
 
@@ -24,6 +25,7 @@ coming from the newer technologies.`,
 Actually these are enabled (recipe-cli --project-language):
 
 golang`)
+
 	},
 }
 
@@ -47,6 +49,7 @@ func init() {
 	RootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 
 	RootCmd.AddCommand(golang.GoCmd)
+	RootCmd.AddCommand(react_native.ReactNativeCmd)
 }
 
 // initConfig reads in config file and ENV variables if set.
