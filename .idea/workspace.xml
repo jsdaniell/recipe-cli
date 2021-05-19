@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d377131-0547-41d2-9c25-851b6db2eab1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmd/react_native/react_native_expo/init_root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/react_native/react_native_expo/init_root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/golang/golang.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/golang/golang.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

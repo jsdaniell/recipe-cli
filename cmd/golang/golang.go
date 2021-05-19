@@ -21,9 +21,7 @@ const (
 		 if len(input) < 3 {
 		 	return errors.New("you have to type a project name")
 		 }
-
 		 // TODO: Test if contains no recommended characters like - * ( ) and others.
-
 		 return nil
  }
 
